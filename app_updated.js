@@ -1,4 +1,3 @@
-
 const foodForm = document.getElementById('food-form');
 const foodLog = document.getElementById('food-log');
 const totalsDiv = document.getElementById('totals');
@@ -8,7 +7,8 @@ let foodEntries = [];
 async function getFoodNutritionalInfo(foodName) {
     const response = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?search_terms=${foodName}&json=true`);
     const data = await response.json();
-    
+    console.log("API response:", data);  // Debugging line
+
     // Check if we have results
     if (data.products && data.products.length > 0) {
         const product = data.products[0]; // Take the first result
@@ -78,4 +78,3 @@ if (localStorage.getItem('foodEntries')) {
 
 window.addEventListener('beforeunload', () => {
     localStorage.setItem('foodEntries', JSON.stringify(foodEntries));
-});
