@@ -1,0 +1,22 @@
+
+    {
+        "short_name": "Nutrition Tracker",
+        "name": "Nutrition Tracker - Track Your Protein, Carbs, Fats, and Calories",
+        "icons": [
+            {
+                "src": "icons/food-icon-192x192.png",
+                "sizes": "192x192",
+                "type": "image/png"
+            },
+            {
+                "src": "icons/food-icon-512x512.png",
+                "sizes": "512x512",
+                "type": "image/png"
+            }
+        ],
+        "start_url": "/",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "theme_color": "#000000"
+    }
+    

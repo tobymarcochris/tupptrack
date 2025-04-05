@@ -1,0 +1,28 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nutrition Tracker</title>
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <div class="app-container">
+            <h1>Nutrition Tracker</h1>
+            <form id="food-form">
+                <input type="text" id="food-name" placeholder="Food Name" required>
+                <input type="number" id="protein" placeholder="Protein (g)" required>
+                <input type="number" id="carbs" placeholder="Carbs (g)" required>
+                <input type="number" id="fat" placeholder="Fat (g)" required>
+                <input type="number" id="calories" placeholder="Calories" required>
+                <button type="submit">Log Food</button>
+            </form>
+            <div id="food-log"></div>
+            <div id="totals"></div>
+        </div>
+    </body>
+    </html>
+    
