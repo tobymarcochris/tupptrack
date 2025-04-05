@@ -78,3 +78,4 @@ if (localStorage.getItem('foodEntries')) {
 
 window.addEventListener('beforeunload', () => {
     localStorage.setItem('foodEntries', JSON.stringify(foodEntries));
+});
